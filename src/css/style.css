@@ -39,6 +39,10 @@ li + li {
     padding-top: 10px;
 }
 
+li p {
+    margin: 0;
+}
+
 li ul li {
     padding: 0 0 5px 0;
 }
