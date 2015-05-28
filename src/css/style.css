@@ -51,6 +51,15 @@ pre {
     padding: 20px;
 }
 
+a {
+    color: #b00;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 /**
  * Bespoke
  */
