@@ -4,3 +4,5 @@
 * [chrome.commands](https://developer.chrome.com/extensions/commands)
 * [Chrome Apps Developer Tool](https://chrome.google.com/webstore/detail/chrome-apps-extensions-de/ohmmkhmmmpcnpikjeljgnaoabkaalbgc?hl=en-US)
 * [App vs Extension](https://developer.chrome.com/webstore/apps_vs_extensions)
+* [Source](https://github.com/jsantiago/pocketcasts)
+* [Presentation](https://github.com/jsantiago/create-chrome-app)
