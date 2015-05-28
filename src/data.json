@@ -1,0 +1,24 @@
+{
+    "pages": [
+        {"title": "", "file": "title.md"},
+        {"title": "", "file": "pocketcasts-title.md"},
+        {"title": "", "file": "pocketcasts-image.md"},
+        {"title": "What's good", "file": "good.md"},
+        {"title": "What's not so good", "file": "meh.md"},
+        {"title": "Sway.fm", "file": "sway.md"},
+        {"title": "But...", "file": "but.md"},
+        {"title": "", "file": "chrome.md"},
+        {"title": "Benefits", "file": "benefits.md"},
+        {"title": "Chrome App", "file": "app.md"},
+        {"title": "Chrome App", "file": "files.md"},
+        {"title": "", "file": "source.md"},
+        {"title": "Installing", "file": "tree.md"},
+        {"title": "", "file": "dev-tools.md"},
+        {"title": "", "file": "apps-uninstalled.md"},
+        {"title": "", "file": "apps-installed.md"},
+        {"title": "", "file": "installed.md"},
+        {"title": "", "file": "demo.md"},
+        {"title": "Links", "file": "links.md"},
+        {"title": "", "file": "thanks.md"}
+    ]
+}

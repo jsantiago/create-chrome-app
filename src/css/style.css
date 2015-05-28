@@ -1,0 +1,118 @@
+@import "http://necolas.github.io/normalize.css/latest/normalize.css";
+
+/**
+ * Base style
+ */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #666;
+    font-size: 18px;
+}
+
+article {
+    display: none;
+}
+
+header {
+    border-bottom: 1px solid #ccc;
+    font-size: 2em;
+    margin: 10px;
+    padding: 10px;
+}
+
+img {
+    width: 640px;
+}
+
+h1 {
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    width: 100%;
+}
+
+li ul,
+li + li {
+    padding-top: 10px;
+}
+
+li ul li {
+    padding: 0 0 5px 0;
+}
+
+pre {
+    padding: 20px;
+}
+
+/**
+ * Bespoke
+ */
+.bespoke-parent {
+    bottom: 0;
+    display: block;
+    left: 0;
+    margin: 15px;
+    overflow:hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.bespoke-slide {
+    transition: visibility .5s ease, transform .6s ease;
+    color: #555;
+    background-color: #fff;
+    height: 480px;
+    left: 50%;
+    margin-left: -320px;
+    margin-top: -240px;
+    position: absolute;
+    overflow: auto;
+    text-align: left;
+    top: 50%;
+    visibility: visible;
+    width: 640px;
+}
+
+.bespoke-slide-content {
+    width: 100%;
+}
+
+.bespoke-inactive,
+.bespoke-bullet-inactive {
+    display: none;
+}
+
+.bespoke-progress-parent {
+    height: 5px;
+    left: 0;
+    position: fixed;
+    right:0;
+    top:0;
+}
+
+.bespoke-progress-bar {
+    background-color: #bb0000;
+    border-radius: 0 4px 4px 0;
+    height: 100%;
+    position: absolute;
+}
+
+/*
+ * Uncomment to animate slides
+ * .bespoke-inactive {
+ *     display: block;
+ *     visibility: hidden;
+ * }
+ *
+ * .bespoke-before {
+ *     transform: translate(-1000px, 0);
+ * }
+ *
+ * .bespoke-after {
+ *     transform: translate(1000px, 0);
+ * }
+*/

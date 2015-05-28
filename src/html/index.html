@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<article>
+{% for page in pages %}
+    <section class="bespoke-slide">
+        {% if page.title %}
+            <header>{{page.title}}</header>
+        {% endif %}
+        {% markdown %}{% include page.file %}{% endmarkdown %}
+    </section>
+{% endfor %}
+</article>
+{% endblock %}

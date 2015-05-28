@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Building a Chrome App</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    
+<article>
+
+    <section class="bespoke-slide">
+        
+        <h1 id="building-a-chrome-app">Building a Chrome App</h1>
+
+    </section>
+
+    <section class="bespoke-slide">
+        
+        <h1 id="pocket-casts">Pocket Casts</h1>
+
+    </section>
+
+    <section class="bespoke-slide">
+        
+        <p><img src="images/pocketcasts.png" /></p>
+
+    </section>
+
+    <section class="bespoke-slide">
+        
+            <header>What&#39;s good</header>
+        
+        <ul>
+<li>Beautiful app &amp; web player</li>
+<li>Sync works brilliantly</li>
+<li>Plays podcasts</li>
+</ul>
+
+    </section>
+
+    <section class="bespoke-slide">
+        
+            <header>What&#39;s not so good</header>
+        
+        <ul>
+<li>App not free ($4.99)</li>
+<li>Web player not free ($9.00)</li>
+<li>Cannot control web player via media buttons</li>
+</ul>
+
+    </section>
+
+    <section class="bespoke-slide">
+        
+            <header>Sway.fm</header>
+        
+        <ul>
+<li>Chrome Extension</li>
+<li>Supports media keys</li>
+<li>Supported by Pocket Casts</li>
+</ul>
+
+    </section>
+
+    <section class="bespoke-slide">
+        
+            <header>But...</header>
+        
+        <ul>
+<li>It isn’t free (gasp!)</li>
+<li>I just paid for the web player and app</li>
+<li>$0.99 is TERRIBLE!!!1!<ul>
+<li>Pay no attention to how much I paid for the app...</li>
+</ul>
+</li>
+</ul>
+
+    </section>
+
+    <section class="bespoke-slide">
+        
+        <h1 id="chrome-app">Chrome App</h1>
+
+    </section>
+
+    <section class="bespoke-slide">
+        
+            <header>Benefits</header>
+        
+        <ul>
+<li>Own window<ul>
+<li><code>⌘ + Tab</code></li>
+<li><code>⌘ + H</code></li>
+<li><code>⌘ + Q</code></li>
+</ul>
+</li>
+<li>Can pin to dock</li>
+<li>Spotlight / Alfred / etc can index</li>
+</ul>
+
+    </section>
+
+    <section class="bespoke-slide">
+        
+            <header>Chrome App</header>
+        
+        <ul>
+<li><p><code>&lt;webview&gt;</code></p>
+<ul>
+<li>Embed the Pocket Cast player</li>
+</ul>
+</li>
+<li><p><code>chrome.commands</code></p>
+<ul>
+<li><code>MediaPrevTrack</code></li>
+<li><code>MediaPlayPause</code></li>
+<li><code>MediaNextTrack</code></li>
+</ul>
+</li>
+</ul>
+
+    </section>
+
+    <section class="bespoke-slide">
+        
+            <header>Chrome App</header>
+        
+        <ul>
+<li>manifest.json</li>
+<li>background.js<ul>
+<li>Creates initial window</li>
+</ul>
+</li>
+<li>index.html<ul>
+<li>Main layout + webview tag</li>
+</ul>
+</li>
+<li><p>main.js</p>
+<ul>
+<li>Handles interactions</li>
+</ul>
+</li>
+<li><p>Typically packaged and installed as a <code>.crx</code> file</p>
+<ul>
+<li>But we don&#39;t have to package it to install it</li>
+<li>More on that later...</li>
+</ul>
+</li>
+</ul>
+
+    </section>
+
+    <section class="bespoke-slide">
+        
+        <h1 id="view-source">View Source</h1>
+
+    </section>
+
+    <section class="bespoke-slide">
+        
+            <header>Installing</header>
+        
+        <pre><code>❯❯❯ tree
+.
+├── 128.png
+├── background.js
+├── index.html
+├── main.js
+├── manifest.json
+├── player.css
+└── style.css
+
+0 directories, 7 files
+</code></pre>
+    </section>
+
+    <section class="bespoke-slide">
+        
+        <h1 id="chrome-apps-developer-tool">Chrome Apps Developer Tool</h1>
+
+    </section>
+
+    <section class="bespoke-slide">
+        
+        <p><img src="images/apps-uninstalled.png" /></p>
+
+    </section>
+
+    <section class="bespoke-slide">
+        
+        <p><img src="images/apps-installed.png" /></p>
+
+    </section>
+
+    <section class="bespoke-slide">
+        
+        <p><img src="images/installed.png" /></p>
+
+    </section>
+
+    <section class="bespoke-slide">
+        
+        <h1 id="demo">Demo</h1>
+
+    </section>
+
+    <section class="bespoke-slide">
+        
+            <header>Links</header>
+        
+        <ul>
+<li><a href="http://www.shiftyjelly.com/pocketcasts">Pocket Casts</a></li>
+<li><a href="https://developer.chrome.com/apps/first_app">Create Your First App</a></li>
+<li><a href="https://developer.chrome.com/apps/tags/webview">webview tag</a></li>
+<li><a href="https://developer.chrome.com/extensions/commands">chrome.commands</a></li>
+<li><a href="https://chrome.google.com/webstore/detail/chrome-apps-extensions-de/ohmmkhmmmpcnpikjeljgnaoabkaalbgc?hl=en-US">Chrome Apps Developer Tool</a></li>
+<li><a href="https://developer.chrome.com/webstore/apps_vs_extensions">App vs Extension</a></li>
+</ul>
+
+    </section>
+
+    <section class="bespoke-slide">
+        
+        <h1 id="thanks-">Thanks!</h1>
+
+    </section>
+
+</article>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
